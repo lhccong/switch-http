@@ -1,10 +1,7 @@
 <h1 align="center"><a href="https://github.com/xkcoding/simple-http" target="_blank">Switch-HTTP</a></h1>
 <p align="center">
-<a href="https://travis-ci.com/xkcoding/simple-http" target="_blank"><img alt="Travis-CI" src="https://travis-ci.com/xkcoding/simple-http.svg?branch=master"/></a>
   <a href="https://search.maven.org/artifact/com.xkcoding.http/simple-http" target="_blank"><img alt="MAVEN" src="https://img.shields.io/maven-central/v/com.xkcoding.http/simple-http.svg?color=brightgreen&label=Maven%20Central"></a>
-  <a href="https://xkcoding.com" target="_blank"><img alt="author" src="https://img.shields.io/badge/author-Yangkai.Shen-blue.svg"/></a>
   <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank"><img alt="JDK" src="https://img.shields.io/badge/JDK-1.8.0_162-orange.svg"/></a>
-  <a href="https://github.com/xkcoding/simple-http/blob/master/LICENSE" target="_blank"><img alt="LICENSE" src="https://img.shields.io/github/license/xkcoding/simple-http.svg"/></a>
 </p>
 
 ## 简介

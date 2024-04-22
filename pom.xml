@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.cong.http</groupId>
-    <artifactId>swith-http</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>switch-http</artifactId>
+    <version>1.0.0</version>
     <description>
         简单的 http 实现，能够自主选择 Http 版本，并提供简单的接口。
     </description>

@@ -35,7 +35,10 @@ public class HttpUtil {
 		if (null == defaultProxy && ClassUtil.isPresent("okhttp3.OkHttpClient", classLoader)) {
 			defaultProxy = getHttpProxy(com.cong.http.support.okhttp3.OkHttp3Impl.class);
 		}
-
+		// 基于 httpclient
+		if (null == defaultProxy && ClassUtil.isPresent("org.apache.http.impl.client.HttpClients", classLoader)) {
+			defaultProxy = getHttpProxy(com.cong.http.support.httpclient.HttpClientImpl.class);
+		}
 		if (defaultProxy == null) {
 			throw new SwitchHttpException("Has no HttpImpl defined in environment!");
 		}

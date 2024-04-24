@@ -17,15 +17,15 @@ import java.util.Map;
 @NoArgsConstructor
 @AllArgsConstructor
 public class SwitchHttpResponse {
+    /**
+     * 成功
+     */
+    private boolean success;
 
     /**
      * 状态码
      */
     private int code;
-    /**
-     * 成功
-     */
-    private boolean success;
     /**
      * 头
      */

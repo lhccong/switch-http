@@ -2,6 +2,7 @@ package com.cong.http;
 
 import com.cong.http.config.HttpConfig;
 import com.cong.http.constants.Constants;
+import com.cong.http.exception.SwitchHttpException;
 import com.cong.http.support.AbstractHttp;
 import com.cong.http.support.Http;
 import com.cong.http.support.HttpHeader;
@@ -30,6 +31,15 @@ public class HttpUtil {
 		if (ClassUtil.isPresent("java.net.http.HttpClient", classLoader)) {
 			defaultProxy = getHttpProxy(com.cong.http.support.java11.HttpClientImpl.class);
 		}
+		// 基于 okhttp3
+		if (null == defaultProxy && ClassUtil.isPresent("okhttp3.OkHttpClient", classLoader)) {
+			defaultProxy = getHttpProxy(com.cong.http.support.okhttp3.OkHttp3Impl.class);
+		}
+
+		if (defaultProxy == null) {
+			throw new SwitchHttpException("Has no HttpImpl defined in environment!");
+		}
+
 		proxy = defaultProxy;
 	}
 

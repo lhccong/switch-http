@@ -25,4 +25,14 @@ public class HttpUtilTest extends TestCase {
         System.out.println("body = " + response.getBody());
         assertEquals(200, response.getCode());
     }
+    public void testPost() {
+        HttpUtil.setConfig(HttpConfig.builder()
+                .timeout(Constants.DEFAULT_TIMEOUT)
+                .proxy(new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", 7890)))
+                .build());
+        SwitchHttpResponse response = HttpUtil.post("https://www.baidu.com");
+        System.out.println("code = " + response.getCode());
+        System.out.println("body = " + response.getBody());
+        assertEquals(200, response.getCode());
+    }
 }

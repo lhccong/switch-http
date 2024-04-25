@@ -39,6 +39,11 @@ public class HttpUtil {
 		if (null == defaultProxy && ClassUtil.isPresent("org.apache.http.impl.client.HttpClients", classLoader)) {
 			defaultProxy = getHttpProxy(com.cong.http.support.httpclient.HttpClientImpl.class);
 		}
+		// 基于 hutool
+		if (null == defaultProxy && ClassUtil.isPresent("cn.hutool.http.HttpRequest", classLoader)) {
+			defaultProxy = getHttpProxy(com.cong.http.support.hutool.HutoolImpl.class);
+		}
+
 		if (defaultProxy == null) {
 			throw new SwitchHttpException("Has no HttpImpl defined in environment!");
 		}

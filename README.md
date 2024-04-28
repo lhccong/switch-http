@@ -1,6 +1,5 @@
-<h1 align="center"><a href="https://github.com/xkcoding/simple-http" target="_blank">Switch-HTTP</a></h1>
+<h1 align="center"><a href="https://github.com/lhccong/switch-http" target="_blank">Switch-HTTP</a></h1>
 <p align="center">
-  <a href="https://search.maven.org/artifact/com.xkcoding.http/simple-http" target="_blank"><img alt="MAVEN" src="https://img.shields.io/maven-central/v/com.xkcoding.http/simple-http.svg?color=brightgreen&label=Maven%20Central"></a>
   <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank"><img alt="JDK" src="https://img.shields.io/badge/JDK-1.8.0_162-orange.svg"/></a>
 </p>
 
